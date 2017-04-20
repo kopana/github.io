@@ -97,24 +97,21 @@ Example: &quot;123456A12C34E56G7DFG&quot;
 
   return inquiry;
 }
+</code></pre></li>
+<li><p><strong>MASK</strong></p>
+<pre><code class="lang-cs">public static Inquiry CreateInquiryMasked(string cardNumber, out string sid, out string orderNum)
+{
+ // create inquiry with default settings
+ Inquiry inquiry = DefaultInquiry(out sid, out orderNum);
 
+ // newly implemented method in SDK
+ inquiry.SetCardPaymentMasked(cardNumber);
 
+ return inquiry;
+}
 </code></pre></li>
 </ul>
-<pre><code>
-* **MASK**
-```cs
-public static Inquiry CreateInquiryMasked(string cardNumber, out string sid, out string orderNum)
-{
-    // create inquiry with default settings
-    Inquiry inquiry = DefaultInquiry(out sid, out orderNum);
-
-    // newly implemented method in SDK
-    inquiry.SetCardPaymentMasked(cardNumber);
-
-    return inquiry;
-}
-</code></pre><div class="NOTE"><h5>Note</h5><p>Diference is only by calling <code>SetCardPayment</code> and <code>SetCardPaymentMasked</code>.</p>
+<div class="NOTE"><h5>Note</h5><p>Diference is only by calling <code>SetCardPayment</code> and <code>SetCardPaymentMasked</code>.</p>
 </div>
 <h2 id="basic-connectivity-tests">Basic Connectivity Tests</h2>
 <h3 id="basic-connectivity-credentials">Basic connectivity credentials</h3>
