@@ -1,0 +1,2370 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Response
+   | Kount SDK .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Response
+   | Kount SDK .NET ">
+    <meta name="generator" content="docfx 2.16.0.499">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="Kount_Ris_Response" data-uid="Kount.Ris.Response">Class Response
+              </h1>
+              <div class="markdown level0 summary"><p>Response immutable data object containing data from the RIS server.<br>
+<strong>Author:</strong> Kount <a>custserv@kount.com</a>;<br>
+<strong>Version:</strong> 6.5.0. <br>
+<strong>Copyright:</strong> 2010 Keynetics Inc <br></p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">Response</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Kount.Ris</h6>
+              <h6><strong>Assembly</strong>:KountRisSdk.dll</h6>
+              <h5 id="Kount_Ris_Response_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class Response : object</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="Kount_Ris_Response__ctor_" data-uid="Kount.Ris.Response.#ctor*"></a>
+              <h4 id="Kount_Ris_Response__ctor_System_String_" data-uid="Kount.Ris.Response.#ctor(System.String)">Response(String)</h4>
+              <div class="markdown level1 summary"><p>Response constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Response(string raw)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">raw</span></td>
+                    <td><p>Splits name=value formatted response string
+populating a hash for getters.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="Kount_Ris_Response_GetAuto_" data-uid="Kount.Ris.Response.GetAuto*"></a>
+              <h4 id="Kount_Ris_Response_GetAuto" data-uid="Kount.Ris.Response.GetAuto">GetAuto()</h4>
+              <div class="markdown level1 summary"><p>Get the automated Kount RIS response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetAuto()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>(A)pprove, (R)eview, or (D)ecline.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetBrand_" data-uid="Kount.Ris.Response.GetBrand*"></a>
+              <h4 id="Kount_Ris_Response_GetBrand" data-uid="Kount.Ris.Response.GetBrand">GetBrand()</h4>
+              <div class="markdown level1 summary"><p>Get the brand of the credit card if a card was the payment method</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetBrand()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Brand of credit card, e.g. VISA</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetBrowser_" data-uid="Kount.Ris.Response.GetBrowser*"></a>
+              <h4 id="Kount_Ris_Response_GetBrowser" data-uid="Kount.Ris.Response.GetBrowser">GetBrowser()</h4>
+              <div class="markdown level1 summary"><p>Get browser (derived from user agent string)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetBrowser()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Browser string</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetCards_" data-uid="Kount.Ris.Response.GetCards*"></a>
+              <h4 id="Kount_Ris_Response_GetCards" data-uid="Kount.Ris.Response.GetCards">GetCards()</h4>
+              <div class="markdown level1 summary"><p>Get the number of transactions associated with the credit card</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetCards()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Number of cards</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetCookies_" data-uid="Kount.Ris.Response.GetCookies*"></a>
+              <h4 id="Kount_Ris_Response_GetCookies" data-uid="Kount.Ris.Response.GetCookies">GetCookies()</h4>
+              <div class="markdown level1 summary"><p>Get a string representing whether the remote device allows cookies</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetCookies()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>&quot;Y&quot; or &quot;N&quot;</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetCountersTriggered_" data-uid="Kount.Ris.Response.GetCountersTriggered*"></a>
+              <h4 id="Kount_Ris_Response_GetCountersTriggered" data-uid="Kount.Ris.Response.GetCountersTriggered">GetCountersTriggered()</h4>
+              <div class="markdown level1 summary"><p>Get a map of the rules counters triggered in the response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IDictionary GetCountersTriggered()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IDictionary</span></td>
+                    <td><p>Map Key: counter name, Value: counter value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetCountry_" data-uid="Kount.Ris.Response.GetCountry*"></a>
+              <h4 id="Kount_Ris_Response_GetCountry" data-uid="Kount.Ris.Response.GetCountry">GetCountry()</h4>
+              <div class="markdown level1 summary"><p>Get the remote device&#39;s country of origin as a two character code</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetCountry()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>The country</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetDateDeviceFirstSeen_" data-uid="Kount.Ris.Response.GetDateDeviceFirstSeen*"></a>
+              <h4 id="Kount_Ris_Response_GetDateDeviceFirstSeen" data-uid="Kount.Ris.Response.GetDateDeviceFirstSeen">GetDateDeviceFirstSeen()</h4>
+              <div class="markdown level1 summary"><p>Get date device first seen</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetDateDeviceFirstSeen()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Date device first seen</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetDeviceLayers_" data-uid="Kount.Ris.Response.GetDeviceLayers*"></a>
+              <h4 id="Kount_Ris_Response_GetDeviceLayers" data-uid="Kount.Ris.Response.GetDeviceLayers">GetDeviceLayers()</h4>
+              <div class="markdown level1 summary"><p>Get a string representing the five layers (Operating System, SSL,
+HTTP, Flash, JavaScript) of the remote device</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetDeviceLayers()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Device layers</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetDevices_" data-uid="Kount.Ris.Response.GetDevices*"></a>
+              <h4 id="Kount_Ris_Response_GetDevices" data-uid="Kount.Ris.Response.GetDevices">GetDevices()</h4>
+              <div class="markdown level1 summary"><p>Get the number of transactions associated with the particular
+device</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetDevices()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Number of devices</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetDeviceScreenResolution_" data-uid="Kount.Ris.Response.GetDeviceScreenResolution*"></a>
+              <h4 id="Kount_Ris_Response_GetDeviceScreenResolution" data-uid="Kount.Ris.Response.GetDeviceScreenResolution">GetDeviceScreenResolution()</h4>
+              <div class="markdown level1 summary"><p>Get device screen resolution</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetDeviceScreenResolution()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Device screen resolution (HxW - Height by Width)</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetEmails_" data-uid="Kount.Ris.Response.GetEmails*"></a>
+              <h4 id="Kount_Ris_Response_GetEmails" data-uid="Kount.Ris.Response.GetEmails">GetEmails()</h4>
+              <div class="markdown level1 summary"><p>Get the number of transactions associated with the email</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetEmails()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Number of emails</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetErrorCode_" data-uid="Kount.Ris.Response.GetErrorCode*"></a>
+              <h4 id="Kount_Ris_Response_GetErrorCode" data-uid="Kount.Ris.Response.GetErrorCode">GetErrorCode()</h4>
+              <div class="markdown level1 summary"><p>Get the error code returned from the server</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetErrorCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Error code returned from the RIS server.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetErrorCount_" data-uid="Kount.Ris.Response.GetErrorCount*"></a>
+              <h4 id="Kount_Ris_Response_GetErrorCount" data-uid="Kount.Ris.Response.GetErrorCount">GetErrorCount()</h4>
+              <div class="markdown level1 summary"><p>Get the number of errors associated with the response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int GetErrorCount()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>Number of errors</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetErrors_" data-uid="Kount.Ris.Response.GetErrors*"></a>
+              <h4 id="Kount_Ris_Response_GetErrors" data-uid="Kount.Ris.Response.GetErrors">GetErrors()</h4>
+              <div class="markdown level1 summary"><p>Get a map of the errors associated with the response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetErrors()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><p>Array of errors</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetFingerPrint_" data-uid="Kount.Ris.Response.GetFingerPrint*"></a>
+              <h4 id="Kount_Ris_Response_GetFingerPrint" data-uid="Kount.Ris.Response.GetFingerPrint">GetFingerPrint()</h4>
+              <div class="markdown level1 summary"><p>Get the device finger print</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetFingerPrint()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Finger print</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetFlash_" data-uid="Kount.Ris.Response.GetFlash*"></a>
+              <h4 id="Kount_Ris_Response_GetFlash" data-uid="Kount.Ris.Response.GetFlash">GetFlash()</h4>
+              <div class="markdown level1 summary"><p>Get a string representing whether or not the remote device allows
+flash.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetFlash()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>&quot;Y&quot; or &quot;N&quot;</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetGeox_" data-uid="Kount.Ris.Response.GetGeox*"></a>
+              <h4 id="Kount_Ris_Response_GetGeox" data-uid="Kount.Ris.Response.GetGeox">GetGeox()</h4>
+              <div class="markdown level1 summary"><p>Get the geo location of the client</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetGeox()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Geox of the client</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetHttpCountry_" data-uid="Kount.Ris.Response.GetHttpCountry*"></a>
+              <h4 id="Kount_Ris_Response_GetHttpCountry" data-uid="Kount.Ris.Response.GetHttpCountry">GetHttpCountry()</h4>
+              <div class="markdown level1 summary"><p>Get the two character country code setting in the remote device&#39;s
+browser</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetHttpCountry()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Get the country</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetIPAddress_" data-uid="Kount.Ris.Response.GetIPAddress*"></a>
+              <h4 id="Kount_Ris_Response_GetIPAddress" data-uid="Kount.Ris.Response.GetIPAddress">GetIPAddress()</h4>
+              <div class="markdown level1 summary"><p>Get proxy IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetIPAddress()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Proxy IP Address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetIPAddressCity_" data-uid="Kount.Ris.Response.GetIPAddressCity*"></a>
+              <h4 id="Kount_Ris_Response_GetIPAddressCity" data-uid="Kount.Ris.Response.GetIPAddressCity">GetIPAddressCity()</h4>
+              <div class="markdown level1 summary"><p>Get city of proxy IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetIPAddressCity()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>City of proxy IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetIPAddressCountry_" data-uid="Kount.Ris.Response.GetIPAddressCountry*"></a>
+              <h4 id="Kount_Ris_Response_GetIPAddressCountry" data-uid="Kount.Ris.Response.GetIPAddressCountry">GetIPAddressCountry()</h4>
+              <div class="markdown level1 summary"><p>Get country of proxy IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetIPAddressCountry()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Country of proxy IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetIPAddressLatitude_" data-uid="Kount.Ris.Response.GetIPAddressLatitude*"></a>
+              <h4 id="Kount_Ris_Response_GetIPAddressLatitude" data-uid="Kount.Ris.Response.GetIPAddressLatitude">GetIPAddressLatitude()</h4>
+              <div class="markdown level1 summary"><p>Get latitude of proxy IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetIPAddressLatitude()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Latitude of proxy IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetIPAddressLongitude_" data-uid="Kount.Ris.Response.GetIPAddressLongitude*"></a>
+              <h4 id="Kount_Ris_Response_GetIPAddressLongitude" data-uid="Kount.Ris.Response.GetIPAddressLongitude">GetIPAddressLongitude()</h4>
+              <div class="markdown level1 summary"><p>Get longitude of proxy IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetIPAddressLongitude()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Longitude of proxy IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetIPAddressOrganization_" data-uid="Kount.Ris.Response.GetIPAddressOrganization*"></a>
+              <h4 id="Kount_Ris_Response_GetIPAddressOrganization" data-uid="Kount.Ris.Response.GetIPAddressOrganization">GetIPAddressOrganization()</h4>
+              <div class="markdown level1 summary"><p>Get organization of proxy IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetIPAddressOrganization()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Organization of proxy IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetIPAddressRegion_" data-uid="Kount.Ris.Response.GetIPAddressRegion*"></a>
+              <h4 id="Kount_Ris_Response_GetIPAddressRegion" data-uid="Kount.Ris.Response.GetIPAddressRegion">GetIPAddressRegion()</h4>
+              <div class="markdown level1 summary"><p>Get region of proxy IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetIPAddressRegion()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Region of proxy IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetJavaScript_" data-uid="Kount.Ris.Response.GetJavaScript*"></a>
+              <h4 id="Kount_Ris_Response_GetJavaScript" data-uid="Kount.Ris.Response.GetJavaScript">GetJavaScript()</h4>
+              <div class="markdown level1 summary"><p>Get a string representing whether the remote device allows
+JavaScript</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetJavaScript()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>&quot;Y&quot; or &quot;N&quot;</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKaptcha_" data-uid="Kount.Ris.Response.GetKaptcha*"></a>
+              <h4 id="Kount_Ris_Response_GetKaptcha" data-uid="Kount.Ris.Response.GetKaptcha">GetKaptcha()</h4>
+              <div class="markdown level1 summary"><p>Get the Kaptcha flag: enabled upon request and for when a RIS
+record has no Kaptcha data</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetKaptcha()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Returns Y or N</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKnowYourCustomer_" data-uid="Kount.Ris.Response.GetKnowYourCustomer*"></a>
+              <h4 id="Kount_Ris_Response_GetKnowYourCustomer" data-uid="Kount.Ris.Response.GetKnowYourCustomer">GetKnowYourCustomer()</h4>
+              <div class="markdown level1 summary"><p>Get the Know Your Customer flag</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetKnowYourCustomer()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Y means a KYC match, N means no match.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKountCentralCustomerId_" data-uid="Kount.Ris.Response.GetKountCentralCustomerId*"></a>
+              <h4 id="Kount_Ris_Response_GetKountCentralCustomerId" data-uid="Kount.Ris.Response.GetKountCentralCustomerId">GetKountCentralCustomerId()</h4>
+              <div class="markdown level1 summary"><p>Get the Kount Central Customer ID</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetKountCentralCustomerId()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Kount Central Customer ID</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKountCentralDecision_" data-uid="Kount.Ris.Response.GetKountCentralDecision*"></a>
+              <h4 id="Kount_Ris_Response_GetKountCentralDecision" data-uid="Kount.Ris.Response.GetKountCentralDecision">GetKountCentralDecision()</h4>
+              <div class="markdown level1 summary"><p>Get the Kount Central Decision</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetKountCentralDecision()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>The Kount Central Decision</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKountCentralErrorCount_" data-uid="Kount.Ris.Response.GetKountCentralErrorCount*"></a>
+              <h4 id="Kount_Ris_Response_GetKountCentralErrorCount" data-uid="Kount.Ris.Response.GetKountCentralErrorCount">GetKountCentralErrorCount()</h4>
+              <div class="markdown level1 summary"><p>Get the number of Kount Central Errors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int GetKountCentralErrorCount()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>Number of Kount Central Errors</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKountCentralErrors_" data-uid="Kount.Ris.Response.GetKountCentralErrors*"></a>
+              <h4 id="Kount_Ris_Response_GetKountCentralErrors" data-uid="Kount.Ris.Response.GetKountCentralErrors">GetKountCentralErrors()</h4>
+              <div class="markdown level1 summary"><p>Get all the Kount Central Errors for this response</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetKountCentralErrors()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><p>Kount Central Errors</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKountCentralNumberThresholdsTriggered_" data-uid="Kount.Ris.Response.GetKountCentralNumberThresholdsTriggered*"></a>
+              <h4 id="Kount_Ris_Response_GetKountCentralNumberThresholdsTriggered" data-uid="Kount.Ris.Response.GetKountCentralNumberThresholdsTriggered">GetKountCentralNumberThresholdsTriggered()</h4>
+              <div class="markdown level1 summary"><p>Get the number of Kount Central thresholds triggered</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int GetKountCentralNumberThresholdsTriggered()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>Number of Kount Central thresholds triggered</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKountCentralThresholdEvents_" data-uid="Kount.Ris.Response.GetKountCentralThresholdEvents*"></a>
+              <h4 id="Kount_Ris_Response_GetKountCentralThresholdEvents" data-uid="Kount.Ris.Response.GetKountCentralThresholdEvents">GetKountCentralThresholdEvents()</h4>
+              <div class="markdown level1 summary"><p>Get list of KcEvent objects for this Response</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;KcEvent&gt; GetKountCentralThresholdEvents()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="Kount.Ris.KcEvent.html">KcEvent</a>&gt;</td>
+                    <td><p>List of KcEvent objects</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKountCentralWarningCount_" data-uid="Kount.Ris.Response.GetKountCentralWarningCount*"></a>
+              <h4 id="Kount_Ris_Response_GetKountCentralWarningCount" data-uid="Kount.Ris.Response.GetKountCentralWarningCount">GetKountCentralWarningCount()</h4>
+              <div class="markdown level1 summary"><p>Get the number of Kount Central Warnings</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int GetKountCentralWarningCount()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>Number of Kount Central Warnings</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetKountCentralWarnings_" data-uid="Kount.Ris.Response.GetKountCentralWarnings*"></a>
+              <h4 id="Kount_Ris_Response_GetKountCentralWarnings" data-uid="Kount.Ris.Response.GetKountCentralWarnings">GetKountCentralWarnings()</h4>
+              <div class="markdown level1 summary"><p>Get all the Kount Central Warnings for this response</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetKountCentralWarnings()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><p>Kount Central Warnings</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetLanguage_" data-uid="Kount.Ris.Response.GetLanguage*"></a>
+              <h4 id="Kount_Ris_Response_GetLanguage" data-uid="Kount.Ris.Response.GetLanguage">GetLanguage()</h4>
+              <div class="markdown level1 summary"><p>Get the language setting on the remote device</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetLanguage()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>The language</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetLexisNexisCbdAttributes_" data-uid="Kount.Ris.Response.GetLexisNexisCbdAttributes*"></a>
+              <h4 id="Kount_Ris_Response_GetLexisNexisCbdAttributes" data-uid="Kount.Ris.Response.GetLexisNexisCbdAttributes">GetLexisNexisCbdAttributes()</h4>
+              <div class="markdown level1 summary"><p>Get LexisNexis Chargeback Defender attribute data associated with
+the RIS transaction. Please contact your Kount representative to
+enable support for this feature in your merchant account.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IDictionary GetLexisNexisCbdAttributes()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IDictionary</span></td>
+                    <td><p>Map of attributes where the keys are the attribute names
+and the values are the attribute values.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetLexisNexisInstantIdAttributes_" data-uid="Kount.Ris.Response.GetLexisNexisInstantIdAttributes*"></a>
+              <h4 id="Kount_Ris_Response_GetLexisNexisInstantIdAttributes" data-uid="Kount.Ris.Response.GetLexisNexisInstantIdAttributes">GetLexisNexisInstantIdAttributes()</h4>
+              <div class="markdown level1 summary"><p>Get LexisNexis Instant ID attribute data associated with
+the RIS transaction. Please contact your Kount representative to
+enable support for this feature in your merchant account.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IDictionary GetLexisNexisInstantIdAttributes()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IDictionary</span></td>
+                    <td><p>Map of attributes where the keys are the attribute names
+and the values are the attribute values.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetLocalTime_" data-uid="Kount.Ris.Response.GetLocalTime*"></a>
+              <h4 id="Kount_Ris_Response_GetLocalTime" data-uid="Kount.Ris.Response.GetLocalTime">GetLocalTime()</h4>
+              <div class="markdown level1 summary"><p>Get local time of the remote device in the YYYY-MM-DD format</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetLocalTime()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Local time</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetMasterCardFraudScore_" data-uid="Kount.Ris.Response.GetMasterCardFraudScore*"></a>
+              <h4 id="Kount_Ris_Response_GetMasterCardFraudScore" data-uid="Kount.Ris.Response.GetMasterCardFraudScore">GetMasterCardFraudScore()</h4>
+              <div class="markdown level1 summary"><p>Get MasterCard Fraud Score associated with the RIS transaction.
+Please contact your Kount representative to enable support for this
+feature in your merchant account.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetMasterCardFraudScore()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>MasterCard Fraud Score</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetMerchantId_" data-uid="Kount.Ris.Response.GetMerchantId*"></a>
+              <h4 id="Kount_Ris_Response_GetMerchantId" data-uid="Kount.Ris.Response.GetMerchantId">GetMerchantId()</h4>
+              <div class="markdown level1 summary"><p>Get the merchant Id of the merchant making the request.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetMerchantId()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Merchant Id.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetMobileDevice_" data-uid="Kount.Ris.Response.GetMobileDevice*"></a>
+              <h4 id="Kount_Ris_Response_GetMobileDevice" data-uid="Kount.Ris.Response.GetMobileDevice">GetMobileDevice()</h4>
+              <div class="markdown level1 summary"><p>Get a string representing whether the remote device is a mobile
+device</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetMobileDevice()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>&quot;Y&quot; or &quot;N&quot;</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetMobileForwarder_" data-uid="Kount.Ris.Response.GetMobileForwarder*"></a>
+              <h4 id="Kount_Ris_Response_GetMobileForwarder" data-uid="Kount.Ris.Response.GetMobileForwarder">GetMobileForwarder()</h4>
+              <div class="markdown level1 summary"><p>Get the mobile device&#39;s wireless application protocol</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetMobileForwarder()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>The protocol</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetMobileType_" data-uid="Kount.Ris.Response.GetMobileType*"></a>
+              <h4 id="Kount_Ris_Response_GetMobileType" data-uid="Kount.Ris.Response.GetMobileType">GetMobileType()</h4>
+              <div class="markdown level1 summary"><p>Get the mobile device type</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetMobileType()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Mobile type</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetMode_" data-uid="Kount.Ris.Response.GetMode*"></a>
+              <h4 id="Kount_Ris_Response_GetMode" data-uid="Kount.Ris.Response.GetMode">GetMode()</h4>
+              <div class="markdown level1 summary"><p>Get the mode of the RIS request.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetMode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Character of the original RIS request mode: e.g. U.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetNetwork_" data-uid="Kount.Ris.Response.GetNetwork*"></a>
+              <h4 id="Kount_Ris_Response_GetNetwork" data-uid="Kount.Ris.Response.GetNetwork">GetNetwork()</h4>
+              <div class="markdown level1 summary"><p>Get the network type</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetNetwork()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Get the network type of the client, e.g. L for library</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetNumberCountersTriggered_" data-uid="Kount.Ris.Response.GetNumberCountersTriggered*"></a>
+              <h4 id="Kount_Ris_Response_GetNumberCountersTriggered" data-uid="Kount.Ris.Response.GetNumberCountersTriggered">GetNumberCountersTriggered()</h4>
+              <div class="markdown level1 summary"><p>Get the number of rules counters triggered in the response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int GetNumberCountersTriggered()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>Number of counters triggered</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetNumberRulesTriggered_" data-uid="Kount.Ris.Response.GetNumberRulesTriggered*"></a>
+              <h4 id="Kount_Ris_Response_GetNumberRulesTriggered" data-uid="Kount.Ris.Response.GetNumberRulesTriggered">GetNumberRulesTriggered()</h4>
+              <div class="markdown level1 summary"><p>Get the number of rules triggered with the response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int GetNumberRulesTriggered()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>Number of rules</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetOrderNumber_" data-uid="Kount.Ris.Response.GetOrderNumber*"></a>
+              <h4 id="Kount_Ris_Response_GetOrderNumber" data-uid="Kount.Ris.Response.GetOrderNumber">GetOrderNumber()</h4>
+              <div class="markdown level1 summary"><p>Get the Order Number.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetOrderNumber()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Order number generated by the merchant.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetOS_" data-uid="Kount.Ris.Response.GetOS*"></a>
+              <h4 id="Kount_Ris_Response_GetOS" data-uid="Kount.Ris.Response.GetOS">GetOS()</h4>
+              <div class="markdown level1 summary"><p>Get operating system (derived from user agent string)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetOS()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>OS (operating system)</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPcRemote_" data-uid="Kount.Ris.Response.GetPcRemote*"></a>
+              <h4 id="Kount_Ris_Response_GetPcRemote" data-uid="Kount.Ris.Response.GetPcRemote">GetPcRemote()</h4>
+              <div class="markdown level1 summary"><p>Get a string representing whether the end device is a remotely
+controlled computer</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPcRemote()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>&quot;Y&quot; or &quot;N&quot;</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPiercedIPAddress_" data-uid="Kount.Ris.Response.GetPiercedIPAddress*"></a>
+              <h4 id="Kount_Ris_Response_GetPiercedIPAddress" data-uid="Kount.Ris.Response.GetPiercedIPAddress">GetPiercedIPAddress()</h4>
+              <div class="markdown level1 summary"><p>Get pierced IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPiercedIPAddress()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Pierced IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPiercedIPAddressCity_" data-uid="Kount.Ris.Response.GetPiercedIPAddressCity*"></a>
+              <h4 id="Kount_Ris_Response_GetPiercedIPAddressCity" data-uid="Kount.Ris.Response.GetPiercedIPAddressCity">GetPiercedIPAddressCity()</h4>
+              <div class="markdown level1 summary"><p>Get city of pierced IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPiercedIPAddressCity()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>City of pierced IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPiercedIPAddressCountry_" data-uid="Kount.Ris.Response.GetPiercedIPAddressCountry*"></a>
+              <h4 id="Kount_Ris_Response_GetPiercedIPAddressCountry" data-uid="Kount.Ris.Response.GetPiercedIPAddressCountry">GetPiercedIPAddressCountry()</h4>
+              <div class="markdown level1 summary"><p>Get country of pierced IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPiercedIPAddressCountry()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Country of pierced IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPiercedIPAddressLatitude_" data-uid="Kount.Ris.Response.GetPiercedIPAddressLatitude*"></a>
+              <h4 id="Kount_Ris_Response_GetPiercedIPAddressLatitude" data-uid="Kount.Ris.Response.GetPiercedIPAddressLatitude">GetPiercedIPAddressLatitude()</h4>
+              <div class="markdown level1 summary"><p>Get latitude of pierced IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPiercedIPAddressLatitude()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Latitude of pierced IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPiercedIPAddressLongitude_" data-uid="Kount.Ris.Response.GetPiercedIPAddressLongitude*"></a>
+              <h4 id="Kount_Ris_Response_GetPiercedIPAddressLongitude" data-uid="Kount.Ris.Response.GetPiercedIPAddressLongitude">GetPiercedIPAddressLongitude()</h4>
+              <div class="markdown level1 summary"><p>Get longitude of pierced IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPiercedIPAddressLongitude()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Longitude of pierced IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPiercedIPAddressOrganization_" data-uid="Kount.Ris.Response.GetPiercedIPAddressOrganization*"></a>
+              <h4 id="Kount_Ris_Response_GetPiercedIPAddressOrganization" data-uid="Kount.Ris.Response.GetPiercedIPAddressOrganization">GetPiercedIPAddressOrganization()</h4>
+              <div class="markdown level1 summary"><p>Get organization of pierced IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPiercedIPAddressOrganization()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Organization of pierced IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPiercedIPAddressRegion_" data-uid="Kount.Ris.Response.GetPiercedIPAddressRegion*"></a>
+              <h4 id="Kount_Ris_Response_GetPiercedIPAddressRegion" data-uid="Kount.Ris.Response.GetPiercedIPAddressRegion">GetPiercedIPAddressRegion()</h4>
+              <div class="markdown level1 summary"><p>Get region of pierced IP address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPiercedIPAddressRegion()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Region of pierced IP address</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetPrefixedResponseDataDictionary_" data-uid="Kount.Ris.Response.GetPrefixedResponseDataDictionary*"></a>
+              <h4 id="Kount_Ris_Response_GetPrefixedResponseDataDictionary_System_String_" data-uid="Kount.Ris.Response.GetPrefixedResponseDataDictionary(System.String)">GetPrefixedResponseDataDictionary(String)</h4>
+              <div class="markdown level1 summary"><p>Get a dictionary of the response data where the keys are the RIS
+response keys that begin with a specified prefix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IDictionary GetPrefixedResponseDataDictionary(string prefix)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">prefix</span></td>
+                    <td><p>Key prefix.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IDictionary</span></td>
+                    <td><p>Dictionary of key-value pairs for a specified RIS key
+prefix.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetProxy_" data-uid="Kount.Ris.Response.GetProxy*"></a>
+              <h4 id="Kount_Ris_Response_GetProxy" data-uid="Kount.Ris.Response.GetProxy">GetProxy()</h4>
+              <div class="markdown level1 summary"><p>Get a string representing whether the remote device is using a
+proxy</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetProxy()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Returns Y or N</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetReason_" data-uid="Kount.Ris.Response.GetReason*"></a>
+              <h4 id="Kount_Ris_Response_GetReason" data-uid="Kount.Ris.Response.GetReason">GetReason()</h4>
+              <div class="markdown level1 summary"><p>Get the reason for the RIS response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetReason()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Main response reason, e.g. LIST, SCOR, etc.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetReasonCode_" data-uid="Kount.Ris.Response.GetReasonCode*"></a>
+              <h4 id="Kount_Ris_Response_GetReasonCode" data-uid="Kount.Ris.Response.GetReasonCode">GetReasonCode()</h4>
+              <div class="markdown level1 summary"><p>Get the merchant defined reason code for the RIS response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetReasonCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Reason code</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetRegion_" data-uid="Kount.Ris.Response.GetRegion*"></a>
+              <h4 id="Kount_Ris_Response_GetRegion" data-uid="Kount.Ris.Response.GetRegion">GetRegion()</h4>
+              <div class="markdown level1 summary"><p>Get the customer region</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetRegion()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>US state abbreviation or country code.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetRulesTriggered_" data-uid="Kount.Ris.Response.GetRulesTriggered*"></a>
+              <h4 id="Kount_Ris_Response_GetRulesTriggered" data-uid="Kount.Ris.Response.GetRulesTriggered">GetRulesTriggered()</h4>
+              <div class="markdown level1 summary"><p>Get a Map of the rules triggered by this Response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IDictionary GetRulesTriggered()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IDictionary</span></td>
+                    <td><p>Map of the rules</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetScore_" data-uid="Kount.Ris.Response.GetScore*"></a>
+              <h4 id="Kount_Ris_Response_GetScore" data-uid="Kount.Ris.Response.GetScore">GetScore()</h4>
+              <div class="markdown level1 summary"><p>Get the Kount score.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetScore()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>1 to 99. The highter the score, the more risk.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetSessionId_" data-uid="Kount.Ris.Response.GetSessionId*"></a>
+              <h4 id="Kount_Ris_Response_GetSessionId" data-uid="Kount.Ris.Response.GetSessionId">GetSessionId()</h4>
+              <div class="markdown level1 summary"><p>Get the session Id.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetSessionId()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Session Id of this transaction generated by the merchant.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetSite_" data-uid="Kount.Ris.Response.GetSite*"></a>
+              <h4 id="Kount_Ris_Response_GetSite" data-uid="Kount.Ris.Response.GetSite">GetSite()</h4>
+              <div class="markdown level1 summary"><p>Get the site ID</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetSite()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>The site ID</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetTimeZone_" data-uid="Kount.Ris.Response.GetTimeZone*"></a>
+              <h4 id="Kount_Ris_Response_GetTimeZone" data-uid="Kount.Ris.Response.GetTimeZone">GetTimeZone()</h4>
+              <div class="markdown level1 summary"><p>Get the two character country code setting in the remote device&#39;s
+browser</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetTimeZone()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>The time zone</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetTransactionId_" data-uid="Kount.Ris.Response.GetTransactionId*"></a>
+              <h4 id="Kount_Ris_Response_GetTransactionId" data-uid="Kount.Ris.Response.GetTransactionId">GetTransactionId()</h4>
+              <div class="markdown level1 summary"><p>Get Kount transaction Id.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetTransactionId()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Alphanumeric transaction id generated by Kount.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetUserAgentString_" data-uid="Kount.Ris.Response.GetUserAgentString*"></a>
+              <h4 id="Kount_Ris_Response_GetUserAgentString" data-uid="Kount.Ris.Response.GetUserAgentString">GetUserAgentString()</h4>
+              <div class="markdown level1 summary"><p>Get user agent string</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetUserAgentString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>User agent string</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetVelo_" data-uid="Kount.Ris.Response.GetVelo*"></a>
+              <h4 id="Kount_Ris_Response_GetVelo" data-uid="Kount.Ris.Response.GetVelo">GetVelo()</h4>
+              <div class="markdown level1 summary"><p>6 hour card velocity</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetVelo()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Number of times this card number was used in the last 6
+hours</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetVersion_" data-uid="Kount.Ris.Response.GetVersion*"></a>
+              <h4 id="Kount_Ris_Response_GetVersion" data-uid="Kount.Ris.Response.GetVersion">GetVersion()</h4>
+              <div class="markdown level1 summary"><p>Get the version of the RIS response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetVersion()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>String of the version.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetVmax_" data-uid="Kount.Ris.Response.GetVmax*"></a>
+              <h4 id="Kount_Ris_Response_GetVmax" data-uid="Kount.Ris.Response.GetVmax">GetVmax()</h4>
+              <div class="markdown level1 summary"><p>2 week card velocity</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetVmax()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Number of times this card number was used in the last
+two weeks</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetVoiceDevice_" data-uid="Kount.Ris.Response.GetVoiceDevice*"></a>
+              <h4 id="Kount_Ris_Response_GetVoiceDevice" data-uid="Kount.Ris.Response.GetVoiceDevice">GetVoiceDevice()</h4>
+              <div class="markdown level1 summary"><p>Get a string representing whether or not the remote device is
+voice controlled</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetVoiceDevice()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>&quot;Y&quot; or &quot;N&quot;</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetWarningCount_" data-uid="Kount.Ris.Response.GetWarningCount*"></a>
+              <h4 id="Kount_Ris_Response_GetWarningCount" data-uid="Kount.Ris.Response.GetWarningCount">GetWarningCount()</h4>
+              <div class="markdown level1 summary"><p>Get the number of warnings associated with the response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int GetWarningCount()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>Number of warnings</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_GetWarnings_" data-uid="Kount.Ris.Response.GetWarnings*"></a>
+              <h4 id="Kount_Ris_Response_GetWarnings" data-uid="Kount.Ris.Response.GetWarnings">GetWarnings()</h4>
+              <div class="markdown level1 summary"><p>Get a Map of the warnings returned by this Response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetWarnings()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><p>Get the warnings</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_HasErrors_" data-uid="Kount.Ris.Response.HasErrors*"></a>
+              <h4 id="Kount_Ris_Response_HasErrors" data-uid="Kount.Ris.Response.HasErrors">HasErrors()</h4>
+              <div class="markdown level1 summary"><p>Check if the response has errors.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool HasErrors()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if response has errors, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Response_ToString_" data-uid="Kount.Ris.Response.ToString*"></a>
+              <h4 id="Kount_Ris_Response_ToString" data-uid="Kount.Ris.Response.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>Get the original raw name=value pair string of the response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Raw string of the response.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

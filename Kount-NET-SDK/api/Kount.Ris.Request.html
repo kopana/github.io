@@ -1,0 +1,1318 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Request
+   | Kount SDK .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Request
+   | Kount SDK .NET ">
+    <meta name="generator" content="docfx 2.16.0.499">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="Kount_Ris_Request" data-uid="Kount.Ris.Request">Class Request
+              </h1>
+              <div class="markdown level0 summary"><p>Abstract parent class for request objects.<br>
+<strong>Author:</strong> Kount <a>custserv@kount.com</a>;<br>
+<strong>Version:</strong> 6.5.0. <br>
+<strong>Copyright:</strong> 2010 Keynetics Inc <br></p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">Request</span></div>
+                  <div class="level2"><a class="xref" href="Kount.Ris.Inquiry.html">Inquiry</a></div>
+                  <div class="level2"><a class="xref" href="Kount.Ris.Update.html">Update</a></div>
+              </div>
+              <h6><strong>Namespace</strong>:Kount.Ris</h6>
+              <h6><strong>Assembly</strong>:KountRisSdk.dll</h6>
+              <h5 id="Kount_Ris_Request_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class Request : object</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="Kount_Ris_Request__ctor_" data-uid="Kount.Ris.Request.#ctor*"></a>
+              <h4 id="Kount_Ris_Request__ctor" data-uid="Kount.Ris.Request.#ctor">Request()</h4>
+              <div class="markdown level1 summary"><p>Construct a request object. Set the static setting from the
+web.config file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Request()</code></pre>
+              </div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Kount.Ris.RequestException.html">RequestException</a></td>
+                    <td><p>Thrown when there is
+static data missing for a RIS request.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="Kount_Ris_Request_Data_" data-uid="Kount.Ris.Request.Data*"></a>
+              <h4 id="Kount_Ris_Request_Data" data-uid="Kount.Ris.Request.Data">Data</h4>
+              <div class="markdown level1 summary"><p>Gets hashtable data</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Hashtable Data { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Hashtable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="Kount_Ris_Request_CheckConfigurationParameter_" data-uid="Kount.Ris.Request.CheckConfigurationParameter*"></a>
+              <h4 id="Kount_Ris_Request_CheckConfigurationParameter_System_String_" data-uid="Kount.Ris.Request.CheckConfigurationParameter(System.String)">CheckConfigurationParameter(String)</h4>
+              <div class="markdown level1 summary"><p>Check configuration parameters for existence in application
+configuration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void CheckConfigurationParameter(string parameter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">parameter</span></td>
+                    <td><p>Parameter name</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Kount.Ris.RequestException.html">RequestException</a></td>
+                    <td><p>Thrown when parameter
+is missing</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_GetCertificateFile_" data-uid="Kount.Ris.Request.GetCertificateFile*"></a>
+              <h4 id="Kount_Ris_Request_GetCertificateFile" data-uid="Kount.Ris.Request.GetCertificateFile">GetCertificateFile()</h4>
+              <div class="markdown level1 summary"><p>Get the certificate file path.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetCertificateFile()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>String of the certificate file path.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_GetParam_" data-uid="Kount.Ris.Request.GetParam*"></a>
+              <h4 id="Kount_Ris_Request_GetParam_System_String_" data-uid="Kount.Ris.Request.GetParam(System.String)">GetParam(String)</h4>
+              <div class="markdown level1 summary"><p>Get value from Data - Hashtable.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetParam(string param)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">param</span></td>
+                    <td><p>Key string in hashtable</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_GetPrivateKeyPassword_" data-uid="Kount.Ris.Request.GetPrivateKeyPassword*"></a>
+              <h4 id="Kount_Ris_Request_GetPrivateKeyPassword" data-uid="Kount.Ris.Request.GetPrivateKeyPassword">GetPrivateKeyPassword()</h4>
+              <div class="markdown level1 summary"><p>Private key password used to export the certificate file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetPrivateKeyPassword()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>String of the certificate export password.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_GetResponse_" data-uid="Kount.Ris.Request.GetResponse*"></a>
+              <h4 id="Kount_Ris_Request_GetResponse_System_Boolean_" data-uid="Kount.Ris.Request.GetResponse(System.Boolean)">GetResponse(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Get the response from the RIS server.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Response GetResponse(bool validate = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">validate</span></td>
+                    <td><p>default value is TRUE. If FALSE validate silently doesn&#39;t throw exception.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Kount.Ris.Response.html">Response</a></td>
+                    <td><p>Kount.Ris.Response populated object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_GetUrl_" data-uid="Kount.Ris.Request.GetUrl*"></a>
+              <h4 id="Kount_Ris_Request_GetUrl" data-uid="Kount.Ris.Request.GetUrl">GetUrl()</h4>
+              <div class="markdown level1 summary"><p>Get the URL of the target RIS server.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GetUrl()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>String of the target url.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_IsSetKhashPaymentEncoding_" data-uid="Kount.Ris.Request.IsSetKhashPaymentEncoding*"></a>
+              <h4 id="Kount_Ris_Request_IsSetKhashPaymentEncoding" data-uid="Kount.Ris.Request.IsSetKhashPaymentEncoding">IsSetKhashPaymentEncoding()</h4>
+              <div class="markdown level1 summary"><p>Check if KHASH payment encoding has been set.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected bool IsSetKhashPaymentEncoding()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>TRUE when set</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SafeGet_" data-uid="Kount.Ris.Request.SafeGet*"></a>
+              <h4 id="Kount_Ris_Request_SafeGet_System_String_" data-uid="Kount.Ris.Request.SafeGet(System.String)">SafeGet(String)</h4>
+              <div class="markdown level1 summary"><p>Sanitize a variable before return it.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected string SafeGet(string var)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">var</span></td>
+                    <td><p>Raw variable</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>Sanitized variable</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetApiKey_" data-uid="Kount.Ris.Request.SetApiKey*"></a>
+              <h4 id="Kount_Ris_Request_SetApiKey_System_String_" data-uid="Kount.Ris.Request.SetApiKey(System.String)">SetApiKey(String)</h4>
+              <div class="markdown level1 summary"><p>Set the API key.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetApiKey(string key)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">key</span></td>
+                    <td><p>Key used to authenticate.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetAuth_" data-uid="Kount.Ris.Request.SetAuth*"></a>
+              <h4 id="Kount_Ris_Request_SetAuth_System_Char_" data-uid="Kount.Ris.Request.SetAuth(System.Char)">SetAuth(Char)</h4>
+              <div class="markdown level1 summary"><p>Set the auth status of the payment.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetAuth(char auth)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Char</span></td>
+                    <td><span class="parametername">auth</span></td>
+                    <td><p>Set A or D.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetAvst_" data-uid="Kount.Ris.Request.SetAvst*"></a>
+              <h4 id="Kount_Ris_Request_SetAvst_System_Char_" data-uid="Kount.Ris.Request.SetAvst(System.Char)">SetAvst(Char)</h4>
+              <div class="markdown level1 summary"><p>Bankcard AVS STREET ADDRESS reply.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetAvst(char avst)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Char</span></td>
+                    <td><span class="parametername">avst</span></td>
+                    <td><p>M, N, or X.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetAvsz_" data-uid="Kount.Ris.Request.SetAvsz*"></a>
+              <h4 id="Kount_Ris_Request_SetAvsz_System_Char_" data-uid="Kount.Ris.Request.SetAvsz(System.Char)">SetAvsz(Char)</h4>
+              <div class="markdown level1 summary"><p>Bankcard AVS ZIP CODE reply.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetAvsz(char avsz)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Char</span></td>
+                    <td><span class="parametername">avsz</span></td>
+                    <td><p>M, N, or X.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetBillMeLaterPayment_" data-uid="Kount.Ris.Request.SetBillMeLaterPayment*"></a>
+              <h4 id="Kount_Ris_Request_SetBillMeLaterPayment_System_String_" data-uid="Kount.Ris.Request.SetBillMeLaterPayment(System.String)">SetBillMeLaterPayment(String)</h4>
+              <div class="markdown level1 summary"><p>Set a Bill Me Later payment.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetBillMeLaterPayment(string blmlId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">blmlId</span></td>
+                    <td><p>bill me later id</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetCardPayment_" data-uid="Kount.Ris.Request.SetCardPayment*"></a>
+              <h4 id="Kount_Ris_Request_SetCardPayment_System_String_" data-uid="Kount.Ris.Request.SetCardPayment(System.String)">SetCardPayment(String)</h4>
+              <div class="markdown level1 summary"><p>Set a credit card payment</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetCardPayment(string cardNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">cardNumber</span></td>
+                    <td><p>Raw credit card number</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetCardPaymentMasked_" data-uid="Kount.Ris.Request.SetCardPaymentMasked*"></a>
+              <h4 id="Kount_Ris_Request_SetCardPaymentMasked_System_String_" data-uid="Kount.Ris.Request.SetCardPaymentMasked(System.String)">SetCardPaymentMasked(String)</h4>
+              <div class="markdown level1 summary"><p>Sets a card payment and masks the card number in the following way: <br>
+First 6 characters remain as they are, following characters up to the last 4 are
+replaced with the &#39;X&#39; character, last 4 characters remain as they are.
+If the provided Payment parameter is not a card payment, standard encoding
+will be applied.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetCardPaymentMasked(string cardNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">cardNumber</span></td>
+                    <td><p>Raw credit card number</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="Kount_Ris_Request_SetCardPaymentMasked_System_String__examples">Examples</h5>
+              <p>card number 0007380568572514 is masked to 000738XXXXXX2514 </p>
+
+              
+              
+              <a id="Kount_Ris_Request_SetCertificate_" data-uid="Kount.Ris.Request.SetCertificate*"></a>
+              <h4 id="Kount_Ris_Request_SetCertificate_System_String_System_String_" data-uid="Kount.Ris.Request.SetCertificate(System.String,System.String)">SetCertificate(String, String)</h4>
+              <div class="markdown level1 summary"><p>Set the RIS certificate information.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetCertificate(string certificate, string password)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">certificate</span></td>
+                    <td><p>Full path of the certificate pk12 or
+pfx file.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">password</span></td>
+                    <td><p>Password used to export the certificate.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetCheckPayment_" data-uid="Kount.Ris.Request.SetCheckPayment*"></a>
+              <h4 id="Kount_Ris_Request_SetCheckPayment_System_String_" data-uid="Kount.Ris.Request.SetCheckPayment(System.String)">SetCheckPayment(String)</h4>
+              <div class="markdown level1 summary"><p>Set a check payment.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetCheckPayment(string micr)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">micr</span></td>
+                    <td><p>Micro number on the check.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetCvvr_" data-uid="Kount.Ris.Request.SetCvvr*"></a>
+              <h4 id="Kount_Ris_Request_SetCvvr_System_Char_" data-uid="Kount.Ris.Request.SetCvvr(System.Char)">SetCvvr(Char)</h4>
+              <div class="markdown level1 summary"><p>Bankcard CVV/CVC/CVV2 reply.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetCvvr(char cvvr)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Char</span></td>
+                    <td><span class="parametername">cvvr</span></td>
+                    <td><p>M, N, or X.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetGiftCardPayment_" data-uid="Kount.Ris.Request.SetGiftCardPayment*"></a>
+              <h4 id="Kount_Ris_Request_SetGiftCardPayment_System_String_" data-uid="Kount.Ris.Request.SetGiftCardPayment(System.String)">SetGiftCardPayment(String)</h4>
+              <div class="markdown level1 summary"><p>Set a gift card payment</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetGiftCardPayment(string giftCardNum)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">giftCardNum</span></td>
+                    <td><p>Gift card number</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetGooglePayment_" data-uid="Kount.Ris.Request.SetGooglePayment*"></a>
+              <h4 id="Kount_Ris_Request_SetGooglePayment_System_String_" data-uid="Kount.Ris.Request.SetGooglePayment(System.String)">SetGooglePayment(String)</h4>
+              <div class="markdown level1 summary"><p>Set a google payment</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetGooglePayment(string googleId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">googleId</span></td>
+                    <td><p>Google pay id</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetGreenDotMoneyPakPayment_" data-uid="Kount.Ris.Request.SetGreenDotMoneyPakPayment*"></a>
+              <h4 id="Kount_Ris_Request_SetGreenDotMoneyPakPayment_System_String_" data-uid="Kount.Ris.Request.SetGreenDotMoneyPakPayment(System.String)">SetGreenDotMoneyPakPayment(String)</h4>
+              <div class="markdown level1 summary"><p>Set a Green Dot MoneyPak payment.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetGreenDotMoneyPakPayment(string id)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">id</span></td>
+                    <td><p>Green Dot MoneyPak payment ID number</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetKhashPaymentEncoding_" data-uid="Kount.Ris.Request.SetKhashPaymentEncoding*"></a>
+              <h4 id="Kount_Ris_Request_SetKhashPaymentEncoding" data-uid="Kount.Ris.Request.SetKhashPaymentEncoding">SetKhashPaymentEncoding()</h4>
+              <div class="markdown level1 summary"><p>Set the RIS payment encoding to KHASH.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetKhashPaymentEncoding()</code></pre>
+              </div>
+              
+              
+              <a id="Kount_Ris_Request_SetKhashPaymentEncoding_" data-uid="Kount.Ris.Request.SetKhashPaymentEncoding*"></a>
+              <h4 id="Kount_Ris_Request_SetKhashPaymentEncoding_System_Boolean_" data-uid="Kount.Ris.Request.SetKhashPaymentEncoding(System.Boolean)">SetKhashPaymentEncoding(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Set the RIS payment encoding to KHASH.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetKhashPaymentEncoding(bool enabled)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">enabled</span></td>
+                    <td><p>TRUE when enabled</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetKountCentralCustomerId_" data-uid="Kount.Ris.Request.SetKountCentralCustomerId*"></a>
+              <h4 id="Kount_Ris_Request_SetKountCentralCustomerId_System_String_" data-uid="Kount.Ris.Request.SetKountCentralCustomerId(System.String)">SetKountCentralCustomerId(String)</h4>
+              <div class="markdown level1 summary"><p>Set the Kount Central customer Id.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetKountCentralCustomerId(string customerId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">customerId</span></td>
+                    <td><p>Kount Central customer Id.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetMack_" data-uid="Kount.Ris.Request.SetMack*"></a>
+              <h4 id="Kount_Ris_Request_SetMack_System_Char_" data-uid="Kount.Ris.Request.SetMack(System.Char)">SetMack(Char)</h4>
+              <div class="markdown level1 summary"><p>Set the merchant acknowledgement that this product will ship.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetMack(char mack)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Char</span></td>
+                    <td><span class="parametername">mack</span></td>
+                    <td><p>Set Y or N.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetMerchantId_" data-uid="Kount.Ris.Request.SetMerchantId*"></a>
+              <h4 id="Kount_Ris_Request_SetMerchantId_System_Int32_" data-uid="Kount.Ris.Request.SetMerchantId(System.Int32)">SetMerchantId(Int32)</h4>
+              <div class="markdown level1 summary"><p>Set the merchant Id.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetMerchantId(int merchantId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">merchantId</span></td>
+                    <td><p>Merchant Id.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetMode_" data-uid="Kount.Ris.Request.SetMode*"></a>
+              <h4 id="Kount_Ris_Request_SetMode_System_Char_" data-uid="Kount.Ris.Request.SetMode(System.Char)">SetMode(Char)</h4>
+              <div class="markdown level1 summary"><p>Set the mode of the transaction.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void SetMode(char mode)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Char</span></td>
+                    <td><span class="parametername">mode</span></td>
+                    <td><p>Depends on the request type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetNoPayment_" data-uid="Kount.Ris.Request.SetNoPayment*"></a>
+              <h4 id="Kount_Ris_Request_SetNoPayment" data-uid="Kount.Ris.Request.SetNoPayment">SetNoPayment()</h4>
+              <div class="markdown level1 summary"><p>Set No Payment.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetNoPayment()</code></pre>
+              </div>
+              
+              
+              <a id="Kount_Ris_Request_SetOrderNumber_" data-uid="Kount.Ris.Request.SetOrderNumber*"></a>
+              <h4 id="Kount_Ris_Request_SetOrderNumber_System_String_" data-uid="Kount.Ris.Request.SetOrderNumber(System.String)">SetOrderNumber(String)</h4>
+              <div class="markdown level1 summary"><p>Set the merchant order number.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetOrderNumber(string orderNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">orderNumber</span></td>
+                    <td><p>Unique, up to 32 characters.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetParameter_" data-uid="Kount.Ris.Request.SetParameter*"></a>
+              <h4 id="Kount_Ris_Request_SetParameter_System_String_System_String_" data-uid="Kount.Ris.Request.SetParameter(System.String,System.String)">SetParameter(String, String)</h4>
+              <div class="markdown level1 summary"><p>Set parameters in the Response</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetParameter(string key, string value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">key</span></td>
+                    <td><p>Parameter key</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td><p>Parameter value</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetPayment_" data-uid="Kount.Ris.Request.SetPayment*"></a>
+              <h4 id="Kount_Ris_Request_SetPayment_System_String_System_String_" data-uid="Kount.Ris.Request.SetPayment(System.String,System.String)">SetPayment(String, String)</h4>
+              <div class="markdown level1 summary"><p>Set a payment type and payment token</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetPayment(string ptyp, string ptok)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">ptyp</span></td>
+                    <td><p>Payment Type</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">ptok</span></td>
+                    <td><p>Payment Token</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetPaymentToken_" data-uid="Kount.Ris.Request.SetPaymentToken*"></a>
+              <h4 id="Kount_Ris_Request_SetPaymentToken_System_String_" data-uid="Kount.Ris.Request.SetPaymentToken(System.String)">SetPaymentToken(String)</h4>
+              <div class="markdown level1 summary"><p>Set the payment token.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void SetPaymentToken(string token)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">token</span></td>
+                    <td><p>Payment token</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetPaymentTokenLast4_" data-uid="Kount.Ris.Request.SetPaymentTokenLast4*"></a>
+              <h4 id="Kount_Ris_Request_SetPaymentTokenLast4_System_String_" data-uid="Kount.Ris.Request.SetPaymentTokenLast4(System.String)">SetPaymentTokenLast4(String)</h4>
+              <div class="markdown level1 summary"><p>Set the last 4 characters of the payment token.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetPaymentTokenLast4(string last4)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">last4</span></td>
+                    <td><p>Last 4 characters</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetPaypalPayment_" data-uid="Kount.Ris.Request.SetPaypalPayment*"></a>
+              <h4 id="Kount_Ris_Request_SetPaypalPayment_System_String_" data-uid="Kount.Ris.Request.SetPaypalPayment(System.String)">SetPaypalPayment(String)</h4>
+              <div class="markdown level1 summary"><p>Set a Paypal payment.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetPaypalPayment(string paypalId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">paypalId</span></td>
+                    <td><p>Paypal payer ID</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetSessionId_" data-uid="Kount.Ris.Request.SetSessionId*"></a>
+              <h4 id="Kount_Ris_Request_SetSessionId_System_String_" data-uid="Kount.Ris.Request.SetSessionId(System.String)">SetSessionId(String)</h4>
+              <div class="markdown level1 summary"><p>Set the session ID of this session.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetSessionId(string sessionId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">sessionId</span></td>
+                    <td><p>Session Id from the merchant.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetUrl_" data-uid="Kount.Ris.Request.SetUrl*"></a>
+              <h4 id="Kount_Ris_Request_SetUrl_System_String_" data-uid="Kount.Ris.Request.SetUrl(System.String)">SetUrl(String)</h4>
+              <div class="markdown level1 summary"><p>Set the URL of the target RIS server.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetUrl(string url)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">url</span></td>
+                    <td><p>String of the target RIS server.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Kount_Ris_Request_SetVersion_" data-uid="Kount.Ris.Request.SetVersion*"></a>
+              <h4 id="Kount_Ris_Request_SetVersion_System_String_" data-uid="Kount.Ris.Request.SetVersion(System.String)">SetVersion(String)</h4>
+              <div class="markdown level1 summary"><p>Set the version of the RIS response.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetVersion(string version)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">version</span></td>
+                    <td><p>Response version.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
