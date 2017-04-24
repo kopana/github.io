@@ -826,6 +826,127 @@ or predictable fashion using RIS request input, rules, and/or Data Collector.</p
     string errCode = err0.Substring(0, 3);
     Assert.IsTrue(&quot;601&quot;.Equals(errCode), &quot;Inquiry failed!  Expected ERRO=601&quot;);
 }
+</code></pre><h2 id="khash-salt-tests">Khash SALT Tests</h2>
+<p>Test examples to verifying that KHASH produces the correct value.</p>
+<p><strong>Test Ideas</strong>:</p>
+<ul>
+<li>Verify salt is configured with correct value</li>
+<li>Verify Khash can retrieve salt from the configuration</li>
+<li>Verify Khash produces expected results for a set of test cards</li>
+</ul>
+<h3 id="1-credit-card-4111111111111111">1. Credit Card <code>4111111111111111</code></h3>
+<ul>
+<li>Input raw: <code>4111111111111111</code></li>
+<li>Expected Khash: <code>411111WMS5YA6FUZA1KC</code></li>
+</ul>
+<pre><code class="lang-cs">public void TestKhashCreditCard1()
+{
+    string _sid = null;
+    string _orderNum = null;
+
+    Inquiry inquiry = TestHelper.CreateInquiry(CARD_NUM_1, out _sid, out _orderNum);
+
+    var hashCardNum = inquiry.GetParam(&quot;PTOK&quot;);
+
+    Assert.IsTrue(&quot;411111WMS5YA6FUZA1KC&quot;.Equals(hashCardNum), 
+               $&quot;Wrong result: {hashCardNum}. Expected KHASH 411111WMS5YA6FUZA1KC.&quot;);
+}
+</code></pre><h3 id="2-credit-card-5199185454061655">2. Credit Card <code>5199185454061655</code></h3>
+<ul>
+<li>Input raw: <code>5199185454061655</code></li>
+<li>Expected Khash: <code>5199182NOQRXNKTTFL11</code></li>
+</ul>
+<pre><code class="lang-cs">public void TestKhashCreditCard2()
+{
+     string _sid = null;
+     string _orderNum = null;
+
+     Inquiry inquiry = TestHelper.CreateInquiry(CARD_NUM_2, out _sid, out _orderNum);
+
+     var hashCardNum = inquiry.GetParam(&quot;PTOK&quot;);
+
+     Assert.IsTrue(&quot;5199182NOQRXNKTTFL11&quot;.Equals(hashCardNum), 
+        $&quot;Wrong result: {hashCardNum}. Expected KHASH 5199182NOQRXNKTTFL11.&quot;);
+}
+</code></pre><h3 id="3-credit-card-4259344583883">3. Credit Card <code>4259344583883</code></h3>
+<ul>
+<li>Input raw: <code>4259344583883</code></li>
+<li>Expected Khash: <code>425934FEXQI1QS6TH2O5</code></li>
+</ul>
+<pre><code class="lang-cs">public void TestKhashCreditCard3()
+{
+    string _sid = null;
+    string _orderNum = null;
+
+    Inquiry inquiry = TestHelper.CreateInquiry(CARD_NUM_3, out _sid, out _orderNum);
+
+    var hashCardNum = inquiry.GetParam(&quot;PTOK&quot;);
+
+    Assert.IsTrue(&quot;425934FEXQI1QS6TH2O5&quot;.Equals(hashCardNum), $&quot;Wrong result: {hashCardNum}. Expected KHASH 425934FEXQI1QS6TH2O5.&quot;);
+}
+</code></pre><h3 id="4-gift-card-4111111111111111">4. Gift Card <code>4111111111111111</code></h3>
+<ul>
+<li>Input raw: <code>4111111111111111</code>  MerchantId: <code>666666</code></li>
+<li>Expected Khash: <code>666666WMS5YA6FUZA1KC</code></li>
+</ul>
+<pre><code class="lang-cs">public void TestKhashGiftCard1()
+{
+    string _sid = null;
+    string _orderNum = null;
+
+    Inquiry inquiry = TestHelper.CreateInquiry(CARD_NUM_1, out _sid, out _orderNum);
+
+    inquiry.SetMerchantId(MERCHANT_ID);
+
+    inquiry.SetGiftCardPayment(CARD_NUM_1);
+
+    var hashCardNum = inquiry.GetParam(&quot;PTOK&quot;);
+
+    Assert.IsTrue(&quot;666666WMS5YA6FUZA1KC&quot;.Equals(hashCardNum), 
+                $&quot;Wrong result: {hashCardNum}. Expected KHASH 666666WMS5YA6FUZA1KC.&quot;);
+}
+</code></pre><h3 id="5-gift-card-5199185454061655">5. Gift Card <code>5199185454061655</code></h3>
+<ul>
+<li>Input raw: <code>5199185454061655</code> MerchantId: <code>666666</code></li>
+<li>Expected Khash: <code>6666662NOQRXNKTTFL11</code></li>
+</ul>
+<pre><code class="lang-cs">public void TestKhashGiftCard2()
+{
+    string _sid = null;
+    string _orderNum = null;
+
+    Inquiry inquiry = TestHelper.CreateInquiry(CARD_NUM_2, out _sid, out _orderNum);
+
+    inquiry.SetMerchantId(MERCHANT_ID);
+
+    inquiry.SetGiftCardPayment(CARD_NUM_2);
+
+    var hashCardNum = inquiry.GetParam(&quot;PTOK&quot;);
+
+    Assert.IsTrue(&quot;6666662NOQRXNKTTFL11&quot;.Equals(hashCardNum), 
+                    $&quot;Wrong result: {hashCardNum}. Expected KHASH 6666662NOQRXNKTTFL11.&quot;);
+}
+</code></pre><h3 id="6-gift-card-4259344583883">6. Gift Card <code>4259344583883</code></h3>
+<ul>
+<li>Input raw: <code>4259344583883</code> MerchantId: <code>666666</code></li>
+<li>Expected Khash: <code>666666FEXQI1QS6TH2O5</code></li>
+</ul>
+<pre><code class="lang-cs">public void TestKhashGiftCard3()
+{
+    string _sid = null;
+    string _orderNum = null;
+
+    Inquiry inquiry = TestHelper.CreateInquiry(CARD_NUM_3, out _sid, out _orderNum);
+
+    inquiry.SetMerchantId(MERCHANT_ID);
+
+    inquiry.SetGiftCardPayment(CARD_NUM_3);
+
+    var hashCardNum = inquiry.GetParam(&quot;PTOK&quot;);
+
+    Assert.IsTrue(&quot;666666FEXQI1QS6TH2O5&quot;.Equals(hashCardNum), 
+                    $&quot;Wrong result: {hashCardNum}. Expected KHASH 666666FEXQI1QS6TH2O5.&quot;);
+}
 </code></pre><h2 id="custom-merchant-id-and-api-key">Custom Merchant ID and API Key</h2>
 <p>One integration test allows a Developer to set customer(new merchant) credentials in config project file. 
 This test is geared toward ensuring the customer&#39;s credentials are valid, but doesn&#39;t depend on a RuleSet being in a specific state.</p>
